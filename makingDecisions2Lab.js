@@ -15,7 +15,7 @@ console.log(firstItem);
 */
 
 //Code Here
-lastItemRemoved = arr.pop([5]);
+lastItemRemoved = arr.pop();
 console.log(arr);
 ////////// PROBLEM 3 //////////
 
@@ -28,7 +28,9 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 */
 
 //Code Here
-
+for(let i = 0; i < family.length; i++) {
+console.log(family[i]);
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -41,6 +43,12 @@ let evensArr = []
 /*
   Use a for-loop to iterate through each number in the 'nums' array, if the number is even, append it to the 'evensArr'.
 */
+for(let i = 0; i < nums.length; i++) {
+  if(i % 2 === 0){
+    console.log(nums[evensArr]);
+  }
+}
+
 
 //Code Here
 
@@ -49,7 +57,7 @@ let evensArr = []
 ////////// PROBLEM 5 //////////
 
 // Do not edit the code below.
-var score = 74
+var score = 70
 // Do not edit the code above.
 
 /*
@@ -57,7 +65,17 @@ var score = 74
 */
 
 //Code Here
-
+if (score >= 90){
+  console.log("A");
+}else if (score >= 80 || score >= 89){
+  console.log("B");
+}else if (score >= 70 || score >= 79) {
+  console.log("C");
+}else if (score >= 60 || score >= 69) {
+  console.log("D");
+}else {
+  console.log("F")
+}
 
 ////////// Intermediate Problems //////////
 
@@ -72,8 +90,7 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 */
 
 //Code Here
-
-
+let someNum = myFavoriteNumbers[5];
 ////////// PROBLEM 7 //////////
 
 // Subscripting (accessing values using their index) an array can fail. What happens if you subscript to the 7th element, but there are not 7 elements in the array? Let's write some code to check for that. 
