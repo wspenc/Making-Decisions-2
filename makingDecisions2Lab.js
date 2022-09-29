@@ -199,13 +199,12 @@ switch (letterGrade) {
 
 //Code Here
 for (let i = 1; i <= 100; i++) {
-  if (i % 3 ==  0){
+  if (i % 3 == 0 && i % 5 == 0){
+    console.log("Devmountain");
+  }else if(i % 3 ==  0){
       console.log("Dev");
   }else if (i % 5 == 0){
       console.log("mountain");
-  }else if (i % 3 == 0 && i % 5 == 0){
-      console.log("Devmountain");
-  }else{
+  }else 
       console.log(i);
-  }
-}
+  };
